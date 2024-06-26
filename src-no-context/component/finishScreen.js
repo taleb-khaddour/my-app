@@ -1,10 +1,6 @@
 import React from 'react'
-import { useQuize } from '../QuizContext';
 
-export default function FinishScreen() {
-
-  const { points,Max,Hightscore,dispatch } = useQuize();
-
+export default function finishScreen({points,Max,Hightscore,dispatch}) {
 
     const percent = Math.ceil((points/Max)*100);
   return (

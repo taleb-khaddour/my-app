@@ -1,9 +1,6 @@
 import React from 'react'
-import { useQuize } from '../QuizContext';
 
-export default function Progress() {
-  const { Max,index,points,numQuestion } = useQuize();
-
+export default function Progress({Max,index,points,numQuestion}) {
   return (
     <header className='progress'>
 

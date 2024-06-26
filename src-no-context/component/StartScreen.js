@@ -1,8 +1,6 @@
 import React from 'react'
-import { useQuize } from '../QuizContext'
 
-export default function StartScreen() {
-  const{numQuestion,dispatch}=useQuize();
+export default function StartScreen({numQuestion,dispatch}) {
     function handelStart(){
         dispatch({type:"StartQuiz"})
       }
